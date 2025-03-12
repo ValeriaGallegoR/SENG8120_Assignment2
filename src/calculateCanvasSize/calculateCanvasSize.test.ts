@@ -8,6 +8,6 @@ describe("calculateCanvasSize", () => {
   });
 
   test("should throw an error message when the length is negative.", () => {
-    expect(() => calculateCanvasSize(10, -100)).toThrow("Length should be positive");
+    expect(() => calculateCanvasSize(-10, 100)).toThrow("Length should be positive");
   });
 });
