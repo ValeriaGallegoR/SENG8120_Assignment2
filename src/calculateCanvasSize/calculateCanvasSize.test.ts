@@ -2,12 +2,12 @@ import calculateCanvasSize from "./calculateCanvasSize";
 
 describe("calculateCanvasSize", () => {
   test("should returns correct result", () => {
-    const result = calculateCanvasSize("10", "100");
+    const result = calculateCanvasSize(10, 100);
 
     expect(result).toEqual(1000);
   });
 
   test("should throw an error message when the length is negative.", () => {
-    expect(() => calculateCanvasSize("10", "-10")).toThrow("Length should be positive");
+    expect(() => calculateCanvasSize(10, -100)).toThrow("Length should be positive");
   });
 });
