@@ -1,16 +1,15 @@
 # SENG8120 Modern Automated Testing 
+## Assignment 2
 
-## Purpose
+### Purpose
 
-This repository houses the code we require for examples and assignments.
+This repository has the purpose of creating Test coverage for:
 
-## Repository Usage
+- Calculate the canvas size
 
-This repository will contain branches of code.
+- Calculate the amount of paint needed for a surface
 
-Please refer to your instructor's directions on how to use this repository.
-
-## Branch Usage
+### Branch Usage
 
 **Installing The Dependencies**
 
@@ -57,3 +56,38 @@ To run a specific test, you can use
 npm run test [my test name]
 ```
 
+### Test Coverage
+
+- paintRequiredCalculator tests:
+  
+  - Should returns correct:
+    
+    - Values are correct
+      
+    - Area is zero
+    
+    - Coverage per liter is zero
+   
+  - Should throw an error message:
+    
+    - Coverage per liter is zero
+      
+    - Area is negative
+    
+    - Coverage per liter is negative
+ 
+- calculateCanvasSize tests:
+
+  - Should returns correct:
+    
+    - Values are correct
+      
+    - Length is zero
+    
+    - Width is zero
+   
+  - Should throw an error message:
+    
+    - Length is negative
+      
+    - Width is negative
