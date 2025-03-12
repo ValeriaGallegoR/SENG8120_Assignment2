@@ -6,4 +6,6 @@ describe("paint required calculator", () => {
 
     expect(result).toEqual(5);
   });
+
+  test.todo("should throw an error message when the area is negative.");
 });
