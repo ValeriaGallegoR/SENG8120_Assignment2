@@ -9,4 +9,6 @@ describe("paint required calculator", () => {
 
   test.todo("should throw an error message when the area is negative.");
   test.todo("should throw an error message when the coveragePerLiter is negative.");
+  test.todo("should throw an error message when the coveragePerLiter is zero.");
+  test.todo("should return expected result when the area is zero.");
 });
