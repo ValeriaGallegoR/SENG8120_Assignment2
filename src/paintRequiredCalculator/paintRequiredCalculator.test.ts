@@ -11,7 +11,10 @@ describe("paint required calculator", () => {
       expect(() => paintRequiredCalculator(-50, 10)).toThrow("Area should be positive");
     });
 
-  test.todo("should throw an error message when the coveragePerLiter is negative.");
+  test("should throw an error message when the coveragePerLiter is negative.", () => {
+    expect(() => paintRequiredCalculator(50, -10)).toThrow("CoveragePerLiter should be positive");
+  });
+
   test.todo("should throw an error message when the coveragePerLiter is zero.");
   test.todo("should return expected result when the area is zero.");
 });
